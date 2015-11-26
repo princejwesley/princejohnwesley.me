@@ -1,0 +1,263 @@
+
+html {
+	font-size: 14px;
+	height: 100%;
+}
+
+body {
+	background-color: white;
+	min-height: 100%;
+	color: #343434;
+	font-family: 'Droid Sans', sans-serif;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.portfolio {
+	max-width: 800px;
+	min-height: 75vh;
+	margin: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.user {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
+}
+
+.face {
+	margin: auto;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
+	width: 144px;
+  height: 144px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.social {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	margin: 5px 0px;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.social .fa {
+	font-size: 28px;
+	font-size: 2rem; 
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-right: 10px;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.02, 1.54, 0, 1.82);
+	        transition: transform 0.6s cubic-bezier(0.02, 1.54, 0, 1.82);
+
+}
+
+.fa:hover {
+	border-bottom: 2px solid currentColor;
+}
+
+.social .fa:hover {
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: -webkit-transform 0.6s ease-out;
+	        transition: transform 0.6s ease-out;
+}
+
+
+.fa-linkedin-square {
+	color: #0077B5;
+}
+
+.fa-stack-overflow {
+	color: #F48024;
+}
+
+.fa-stack-overflow:hover {
+	padding-bottom: 2px;
+}
+
+.description {
+	font-size: 1.2em;
+}
+
+.highlight {
+	color: #5997A9;
+}
+
+.fa-twitter {
+	color: #55ACEE;
+}
+
+.fa-github {
+	color: #333;
+}
+
+.fa-skype {
+	color: #00AFF0;
+}
+
+.fa-envelope {
+	color: #63BCE3;
+}
+
+.social > .flex {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+.strike {
+  color: #5997A9;
+  font-size: 16px;
+  position: relative;
+}
+
+.strike:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: 100%;
+  left: 50%;
+  background: #5997A9;
+  -webkit-transition: all .35s cubic-bezier(0.4, 0, 1, 1);
+          transition: all .35s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.strike:hover:before {
+  width: 100%;
+  left: 0;
+  background: rgba(103,164,187,0.6);
+}
+
+.dotted {
+	border-bottom: 1px dotted #729EAB;
+}
+
+.container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.left, .right, .top, .social {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+.left {
+	max-width: 40%;
+	min-width: 160px;
+}
+
+.right {
+	position: relative;
+}
+
+@media only screen and (max-width: 480px) { 
+	html {
+		font-size: 12px;
+	}
+	.container {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.social {
+		margin: 10px 0px;
+	}
+
+	.description:after {
+	  content: "";
+	  background: transparent;
+	  width: 25%;
+	  height: 3px;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  position: absolute;
+	  top: 100%;
+	  left: 33%;
+	  box-shadow: 0px 1px 1px -1px rgba(0,0,0,0.75);
+	}
+
+	.strike {
+		font-size: 14px;
+	}
+}
+
+.flex {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+.top {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.top, .social {
+	max-height: 80px;
+	min-height: 40px;
+}
