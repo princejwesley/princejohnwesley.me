@@ -44,6 +44,11 @@ body {
 	        align-self: center;
 }
 
+@keyframes clrs {
+  from { color: #5997A9; }
+  to { color: #F48024; }
+}
+
 .face {
 	margin: auto;
 	-webkit-align-self: center;
@@ -119,8 +124,12 @@ body {
 	font-size: 1.2em;
 }
 
-.highlight {
+.highlight, .strike {
 	color: #5997A9;
+  animation-name: clrs;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .fa-twitter {
@@ -174,7 +183,7 @@ a {
 .strike:hover:before {
   width: 100%;
   left: 0;
-  background: rgba(103,164,187,0.6);
+  background: rgba(148, 150, 150, 0.6);
 }
 
 .dotted {
